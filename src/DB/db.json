@@ -1,0 +1,60 @@
+{
+  "artworks": [
+    {
+      "id": "5221",
+      "image": "/uploads/6.jpeg",
+      "artist": "dsasda",
+      "dimensions": "sadsad",
+      "medium": "sdasdadsasda"
+    },
+    {
+      "id": "5ccf",
+      "image": "/uploads/1.jpeg",
+      "artist": "rksub",
+      "dimensions": "33*33",
+      "medium": "pencil"
+    },
+    {
+      "id": "d140",
+      "image": "/uploads/3.jpeg",
+      "artist": "pranab",
+      "dimensions": "23*25",
+      "medium": "wood cart"
+    },
+    {
+      "id": "6a22",
+      "image": "/uploads/4.jpeg",
+      "artist": "ram",
+      "dimensions": "25*9",
+      "medium": "woodcut"
+    },
+    {
+      "id": "5a74",
+      "image": "/uploads/5.jpeg",
+      "artist": "sdsa",
+      "dimensions": "fd",
+      "medium": "ggg"
+    },
+    {
+      "id": "b975",
+      "image": "/uploads/2.jpeg",
+      "artist": "dfgfd",
+      "dimensions": "fdgfd",
+      "medium": "fdgdf"
+    },
+    {
+      "id": "b978",
+      "image": "/uploads/6.jpeg",
+      "artist": "dfg",
+      "dimensions": "fdg",
+      "medium": "gfd"
+    },
+    {
+      "id": "50a9",
+      "image": "/uploads/5.jpeg",
+      "artist": "dfgd",
+      "dimensions": "fgdfg",
+      "medium": "dfg"
+    }
+  ]
+}

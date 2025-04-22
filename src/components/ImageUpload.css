@@ -1,0 +1,8 @@
+.scroll-container {
+    height: 500px; /* or any height you want */
+    overflow-y: auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
