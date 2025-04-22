@@ -9,3 +9,6 @@
     object-fit: cover;    /* Ensure the image fills the area nicely */
     width: 100%;          /* Make it responsive */
   }
+ .htag{
+    text-align: center;
+  }
