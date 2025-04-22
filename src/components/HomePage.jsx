@@ -22,42 +22,24 @@ function HomePage() {
       <h2>A Retrospective Exhibition of Rabin Dutta</h2>
       <p>An Exhibition initiated by Janus Art Gallery</p>
 
-      <div className="row ">
-
-        <div className="d-flex flex-row gap-5 " >
-          {
-            data.map((el) => (
-              <Card key={el.id} style={{width:'300px', height: '500px'}}>
-              <Card.Img variant="top" src={`../public${el.image}`} />
-            <Card.Body>
-              <Card.Title> {el.artist}</Card.Title>
-              <Card.Text>
-                {el.medium}
-              </Card.Text>
-              <Card.Text>
-              Dimensions	
-              {el.dimensions} Inches
-              </Card.Text>
-              <Button variant="primary">See Details</Button>
-            </Card.Body>
-          </Card>
-            ))
-          }
-          {/* <Card style={{ width: '100%' }}>
-            <Card.Img variant="top" src="https://janusartgallery.com/wp-content/uploads/2024/12/rabin-dutta-painting-3.webp" />
-            <Card.Body>
-              <Card.Title> Artist Name</Card.Title>
-              <Card.Text>
-                Medium:water color
-              </Card.Text>
-              <Card.Text>
-              Dimensions	
-              21 X 13 Inches
-              </Card.Text>
-              <Button variant="primary">Learn More</Button>
-            </Card.Body>
-          </Card> */}
-        </div>
+      <div className="row">
+        {data.map((el) => (
+          <div className="col-md-3 mb-4" key={el.id}>
+            <Card style={{ height: '100%' }}>
+              <Card.Img
+                variant="top"
+                src={el.image} // e.g. "/images/art1.jpg"
+                className="card-img-top"
+              />
+              <Card.Body>
+                <Card.Title>{el.artist}</Card.Title>
+                <Card.Text>{el.medium}</Card.Text>
+                <Card.Text>Dimensions: {el.dimensions} Inches</Card.Text>
+                <Button variant="primary">See Details</Button>
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
       </div>
     </div>
   );
