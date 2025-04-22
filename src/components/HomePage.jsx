@@ -19,8 +19,8 @@ function HomePage() {
 
   return (
     <div className="container">
-      <h2>A Retrospective Exhibition of Rabin Dutta</h2>
-      <p>An Exhibition initiated by Janus Art Gallery</p>
+      <h2 className='htag'>A Retrospective Exhibition of Ranjit Das</h2>
+      <p className='htag'>An Exhibition initiated by kya Art Gallery</p>
 
       <div className="row">
         {data.map((el) => (
