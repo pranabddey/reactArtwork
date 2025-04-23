@@ -1,21 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./HomePage.css";
 import "../App.css";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
 function HomePage() {
-  const[data, setData] = useState([])
+  const [data, setData] = useState([]);
+  const navigate = useNavigate();
 
-  useEffect( ()=>{
-     async function getData() {
+  useEffect(() => {
+    async function getData() {
       const fetchedData = await fetch('http://localhost:5000/artworks');
-      const res = await fetchedData.json()
-      setData(res)
+      const res = await fetchedData.json();
+      setData(res);
     }
-    getData()
-  },[])
+    getData();
+  }, []);
 
+  const handleClick = (id) => {
+    navigate(`/product/${id}`);
+  };
 
   return (
     <div className="container">
@@ -28,14 +34,16 @@ function HomePage() {
             <Card style={{ height: '100%' }}>
               <Card.Img
                 variant="top"
-                src={el.image} // e.g. "/images/art1.jpg"
+                src={el.image}
                 className="card-img-top"
               />
               <Card.Body>
-                <Card.Title>{el.artist}</Card.Title>
-                <Card.Text>{el.medium}</Card.Text>
+                <Card.Title>Artist: {el.artist}</Card.Title>
+                <Card.Text>Medium: {el.medium}</Card.Text>
                 <Card.Text>Dimensions: {el.dimensions} Inches</Card.Text>
-                <Button variant="primary">See Details</Button>
+                <Button onClick={() => handleClick(el.id)} variant="primary">
+                  See Details
+                </Button>
               </Card.Body>
             </Card>
           </div>
@@ -46,6 +54,7 @@ function HomePage() {
 }
 
 export default HomePage;
+
 
 
 // json-server --watch ./src/DB/db.json --port 5000
