@@ -5,6 +5,7 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import ImageUpload from './components/ImageUpload';
+import ProductDetails from './components/ProductDetails';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/imageupload" element={<ImageUpload />} />
+        <Route path="/product/:id" element={<ProductDetails/>} />
       </Routes>
     </main>
       <footer>
