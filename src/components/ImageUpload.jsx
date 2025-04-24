@@ -10,6 +10,9 @@ function ImageUpload() {
   const [artist, setArtist] = useState('');
   const [dimensions, setDimensions] = useState('');
   const [medium, setMedium] = useState('');
+  const [title, settitle] = useState('');
+  const [details, setdetails] = useState('');
+  const [year, setyear] = useState('');
 
   const handleImageChange =  (event) => {
     const file = event.target.files[0];
@@ -20,9 +23,7 @@ function ImageUpload() {
       console.log("FILE PATH:: ", file.name);
 
 
-      // setSelectedImage(URL.createObjectURL(file));
-      // setImageFile(URL.createObjectURL(file));
-      // console.log("FILE PATH:: ", file.name);
+  
       
     }
   };
@@ -30,7 +31,7 @@ function ImageUpload() {
   const handleSubmit = async(e) => {
     e.preventDefault();
 
-    if (!imageFile || !artist || !dimensions || !medium) {
+    if (!imageFile || !artist || !dimensions || !medium || !title || !details || !year) {
       alert("Please fill out all fields and select an image.");
       return;
     }
@@ -41,6 +42,9 @@ function ImageUpload() {
       artist,
       dimensions,
       medium,
+      title,
+      details,
+      year
     };
 
 
@@ -72,6 +76,9 @@ function ImageUpload() {
     setArtist('');
     setDimensions('');
     setMedium('');
+    settitle('');
+    setdetails('');
+    setyear('');
   };
 
   return (
@@ -101,13 +108,43 @@ function ImageUpload() {
         </Box>
 
         <Form onSubmit={handleSubmit}>
-          <Form.Control
-            type="text"
-            placeholder="Artist"
+          {/* Artist Dropdown */}
+          <Form.Select
             className="mb-3"
             value={artist}
             onChange={(e) => setArtist(e.target.value)}
-          />
+          >
+            <option value="">Select Artist</option>
+            <option value="Ranjit Das">Ranjit Das</option>
+            <option value="Ranjit Das">Ritusree Dey</option>
+            <option value="Ritusree Dey">Unknown</option>
+          
+          </Form.Select>
+        <Form.Control
+          type="text"
+          placeholder="Title"
+          className="mb-3"
+          value={title}
+          onChange={(e) => settitle(e.target.value)}
+        />
+
+
+          {/* Medium Dropdown */}
+          <Form.Select
+            className="mb-3"
+            value={medium}
+            onChange={(e) => setMedium(e.target.value)}
+          >
+            <option value="">Select Medium</option>
+            <option value="Water color">Water color</option>
+            <option value="Wood Cut">Wood Cut</option>
+            <option value="Acrylic">Acrylic</option>
+            <option value="Acrylic">Pencil Charcoal</option>
+            <option value="Acrylic">MixMedia</option>
+          </Form.Select>
+
+      
+
           <Form.Control
             type="text"
             placeholder="Dimensions"
@@ -115,12 +152,23 @@ function ImageUpload() {
             value={dimensions}
             onChange={(e) => setDimensions(e.target.value)}
           />
+        
+        <Form.Control
+          type="number"
+          placeholder="YEAR"
+          className="mb-3"
+          value={year}
+          onChange={(e) => setyear(e.target.value)}
+          min="1900"
+          max="2099"
+        />
+
           <Form.Control
-            type="text"
-            placeholder="Medium"
+            as="textarea"
+            placeholder="Details about Art"
             className="mb-3"
-            value={medium}
-            onChange={(e) => setMedium(e.target.value)}
+            value={details}
+            onChange={(e) => setdetails(e.target.value)}
           />
 
           <Button type="submit" variant="contained" color="primary">

@@ -13,27 +13,31 @@ function App() {
   return (
 
     <>
-     <BrowserRouter>
+      <BrowserRouter>
         <div className="app-wrapper">
-      <header>
-        <NavbarH />
-      </header>
-      <main className="content">
 
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/imageupload" element={<ImageUpload />} />
-        <Route path="/product/:id" element={<ProductDetails/>} />
-      </Routes>
-    </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
-     
-    </BrowserRouter>
+          <header>
+            <NavbarH />
+          </header>
+          <br />
+          <br />
+          <br />
+          <main className="content">
 
-</>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/imageupload" element={<ImageUpload />} />
+              <Route path="/product/:id" element={<ProductDetails />} />
+            </Routes>
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </div>
+
+      </BrowserRouter>
+
+    </>
 
   )
 }
