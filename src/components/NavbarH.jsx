@@ -66,10 +66,10 @@ export default function AccessibleTabs2() {
           label="Image UPLOAD"
           sx={{ color: 'black', fontWeight: 600, minHeight: 'auto', height: '48px' }}
         />
-        <Tab
+        {/* <Tab
           label="Login"
           sx={{ color: 'black', fontWeight: 600, minHeight: 'auto', height: '48px' }}
-        />
+        /> */}
       </Tabs>
     </Box>
   );

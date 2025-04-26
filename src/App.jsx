@@ -31,7 +31,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/imageupload" element={<ImageUpload />} />
                 <Route path="/product/:id" element={<ProductDetails />} />
-                <Route path="/login" element={<Navigate to="/" />} />
+                {/* <Route path="/login" element={<Navigate to="/" />} /> */}
               </Routes>
             </main>
             <footer>
