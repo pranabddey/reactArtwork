@@ -1,7 +1,7 @@
 {
   "artworks": [
     {
-      "image": "/uploads/8.jpg",
+      "image": "uploads/8.jpg",
       "artist": "Ranjit Das",
       "dimensions": "2/3",
       "medium": "water color",
@@ -11,7 +11,7 @@
       "id": "fGRDDax"
     },
     {
-      "image": "/uploads/7.jpg",
+      "image": "uploads/7.jpg",
       "artist": "Ranjit Das",
       "dimensions": "4\"*4\"",
       "medium": "Acrelic",
@@ -21,7 +21,7 @@
       "id": "g9ahDA0"
     },
     {
-      "image": "/uploads/9.jpg",
+      "image": "uploads/9.jpg",
       "artist": "Ranjit Das",
       "dimensions": "5\"*5\"",
       "medium": "𝐀𝐜𝐫𝐲𝐥𝐢𝐜",
@@ -31,7 +31,7 @@
       "id": "U-ZkA6N"
     },
     {
-      "image": "/uploads/10.jpg",
+      "image": "uploads/10.jpg",
       "artist": "Ranjit Das",
       "dimensions": "6\"*6\"",
       "medium": "𝐀𝐜𝐫𝐲𝐥𝐢𝐜 ",
@@ -41,7 +41,7 @@
       "id": "KinOr6J"
     },
     {
-      "image": "/uploads/11.jpg",
+      "image": "uploads/11.jpg",
       "artist": "Ranjit Das",
       "dimensions": "4\"*4\"",
       "medium": "𝚆𝚊𝚝𝚎𝚛 𝚌𝚘𝚕𝚘𝚞𝚛",
@@ -51,7 +51,7 @@
       "id": "xEY3md5"
     },
     {
-      "image": "/uploads/12.jpg",
+      "image": "uploads/12.jpg",
       "artist": "Ranjit Das",
       "dimensions": "6\"*6\"",
       "medium": "𝙰𝚌𝚛𝚢𝚕𝚒𝚌 ",
@@ -61,7 +61,7 @@
       "id": "U4V_F-r"
     },
     {
-      "image": "/uploads/16.jpg",
+      "image": "uploads/16.jpg",
       "artist": "Ritusree Dey",
       "dimensions": "5\"*4\"",
       "medium": "Acrylic",
@@ -71,7 +71,7 @@
       "id": "nM3wmEy"
     },
     {
-      "image": "/uploads/14.jpg",
+      "image": "uploads/14.jpg",
       "artist": "Ritusree Dey",
       "dimensions": "4\"*5\"",
       "medium": "Wood Cut",
@@ -81,7 +81,7 @@
       "id": "wqYsa4O"
     },
     {
-      "image": "/uploads/15.jpg",
+      "image": "uploads/15.jpg",
       "artist": "Ritusree Dey",
       "dimensions": "3\"*4\"",
       "medium": "Wood Cut",
@@ -91,7 +91,7 @@
       "id": "OxsC6Z-"
     },
     {
-      "image": "/uploads/2.jpeg",
+      "image": "uploads/2.jpeg",
       "artist": "Ritusree Dey",
       "dimensions": "5\"5\"",
       "medium": "Wood Cut",
@@ -101,7 +101,7 @@
       "id": "ja_AOK0"
     },
     {
-      "image": "/uploads/3.jpeg",
+      "image": "uploads/3.jpeg",
       "artist": "Ritusree Dey",
       "dimensions": "5\"*5\"",
       "medium": "Wood Cut",
@@ -111,7 +111,7 @@
       "id": "GiAlOOC"
     },
     {
-      "image": "/uploads/1.jpeg",
+      "image": "uploads/1.jpeg",
       "artist": "Ritusree Dey",
       "dimensions": "6\"*6\"",
       "medium": "Wood Cut",
