@@ -1,7 +1,7 @@
 {
   "artworks": [
     {
-      "image": "/uploads/8.jpg",
+      "image": "uploads/8.jpg",
       "artist": "Ranjit Das",
       "dimensions": "2/3",
       "medium": "water color",
@@ -11,7 +11,7 @@
       "id": "fGRDDax"
     },
     {
-      "image": "/uploads/7.jpg",
+      "image": "uploads/7.jpg",
       "artist": "Ranjit Das",
       "dimensions": "4\"*4\"",
       "medium": "Acrelic",
@@ -21,7 +21,7 @@
       "id": "g9ahDA0"
     },
     {
-      "image": "/uploads/9.jpg",
+      "image": "uploads/9.jpg",
       "artist": "Ranjit Das",
       "dimensions": "5\"*5\"",
       "medium": "𝐀𝐜𝐫𝐲𝐥𝐢𝐜",
@@ -31,7 +31,7 @@
       "id": "U-ZkA6N"
     },
     {
-      "image": "/uploads/10.jpg",
+      "image": "uploads/10.jpg",
       "artist": "Ranjit Das",
       "dimensions": "6\"*6\"",
       "medium": "𝐀𝐜𝐫𝐲𝐥𝐢𝐜 ",

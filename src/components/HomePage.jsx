@@ -15,10 +15,10 @@ function HomePage() {
 
   useEffect(() => {
     async function getData() {
-      const fetchedData = await fetch('http://localhost:5000/artworks');
+      const fetchedData = await fetch('https://pranabddey.github.io/reactArtwork/DB/db.json');
       const res = await fetchedData.json();
-      setData(res);
-      setFilteredData(res);
+      setData(res.artworks);
+      setFilteredData(res.artworks);
     }
     getData();
   }, []);

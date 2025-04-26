@@ -12,9 +12,10 @@ function ProductDetails() {
   useEffect(() => {
     async function fetchArtwork() {
       try {
-        const res = await fetch(`http://localhost:5000/artworks/${id}`);
+        const res = await fetch(`https://pranabddey.github.io/reactArtwork/DB/db.json`);
         const data = await res.json();
-        setArtwork(data);
+        const d = data.artworks.find(a => a.id === id);
+        setArtwork(d);
       } catch (error) {
         console.error('Failed to fetch artwork:', error);
       }
