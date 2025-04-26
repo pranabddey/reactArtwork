@@ -116,8 +116,8 @@ function ImageUpload() {
           >
             <option value="">Select Artist</option>
             <option value="Ranjit Das">Ranjit Das</option>
-            <option value="Ranjit Das">Ritusree Dey</option>
-            <option value="Ritusree Dey">Unknown</option>
+            <option value="Ritusree Dey">Ritusree Dey</option>
+            <option value="Unknown">Unknown</option>
           
           </Form.Select>
         <Form.Control

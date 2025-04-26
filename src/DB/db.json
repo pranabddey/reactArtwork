@@ -10,7 +10,6 @@
       "year": "2024",
       "id": "fGRDDax"
     },
-    
     {
       "image": "/uploads/7.jpg",
       "artist": "Ranjit Das",
@@ -61,7 +60,6 @@
       "year": "2024",
       "id": "U4V_F-r"
     },
-    
     {
       "image": "/uploads/16.jpg",
       "artist": "Ritusree Dey",
@@ -71,6 +69,56 @@
       "details": "Ramkingkar......",
       "year": "2022",
       "id": "nM3wmEy"
+    },
+    {
+      "image": "/uploads/14.jpg",
+      "artist": "Ritusree Dey",
+      "dimensions": "4\"*5\"",
+      "medium": "Wood Cut",
+      "title": "Gossip",
+      "details": "Gossip in Table",
+      "year": "2019",
+      "id": "wqYsa4O"
+    },
+    {
+      "image": "/uploads/15.jpg",
+      "artist": "Ritusree Dey",
+      "dimensions": "3\"*4\"",
+      "medium": "Wood Cut",
+      "title": "Boys",
+      "details": "Gossip on Table",
+      "year": "2019",
+      "id": "OxsC6Z-"
+    },
+    {
+      "image": "/uploads/2.jpeg",
+      "artist": "Ritusree Dey",
+      "dimensions": "5\"5\"",
+      "medium": "Wood Cut",
+      "title": "Face",
+      "details": "See",
+      "year": "2019",
+      "id": "ja_AOK0"
+    },
+    {
+      "image": "/uploads/3.jpeg",
+      "artist": "Ritusree Dey",
+      "dimensions": "5\"*5\"",
+      "medium": "Wood Cut",
+      "title": "Thinking",
+      "details": "Thinking",
+      "year": "2020",
+      "id": "GiAlOOC"
+    },
+    {
+      "image": "/uploads/1.jpeg",
+      "artist": "Ritusree Dey",
+      "dimensions": "6\"*6\"",
+      "medium": "Wood Cut",
+      "title": "Gossip",
+      "details": "Gossip on the Table",
+      "year": "2019",
+      "id": "tt5w_Av"
     }
   ]
 }
