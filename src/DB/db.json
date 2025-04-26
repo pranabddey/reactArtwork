@@ -1,60 +1,124 @@
 {
   "artworks": [
     {
-      "id": "5221",
-      "image": "/uploads/6.jpeg",
-      "artist": "dsasda",
-      "dimensions": "sadsad",
-      "medium": "sdasdadsasda"
+      "image": "/uploads/8.jpg",
+      "artist": "Ranjit Das",
+      "dimensions": "2/3",
+      "medium": "water color",
+      "title": "Sky",
+      "details": "art for peace...love nature and spded it world ",
+      "year": "2024",
+      "id": "fGRDDax"
     },
     {
-      "id": "5ccf",
-      "image": "/uploads/1.jpeg",
-      "artist": "rksub",
-      "dimensions": "33*33",
-      "medium": "pencil"
+      "image": "/uploads/7.jpg",
+      "artist": "Ranjit Das",
+      "dimensions": "4\"*4\"",
+      "medium": "Acrelic",
+      "title": "𝐀𝐟𝐟𝐞𝐜𝐭𝐢𝐨𝐧",
+      "details": "𝐀𝐜𝐫𝐲𝐥𝐢𝐜 𝐨𝐧 𝐂𝐚𝐧𝐯𝐚𝐬",
+      "year": "2025",
+      "id": "g9ahDA0"
     },
     {
-      "id": "d140",
-      "image": "/uploads/3.jpeg",
-      "artist": "pranab",
-      "dimensions": "23*25",
-      "medium": "wood cart"
+      "image": "/uploads/9.jpg",
+      "artist": "Ranjit Das",
+      "dimensions": "5\"*5\"",
+      "medium": "𝐀𝐜𝐫𝐲𝐥𝐢𝐜",
+      "title": "𝐀𝐟𝐟𝐞𝐜𝐭𝐢𝐨𝐧",
+      "details": "𝐀𝐜𝐫𝐲𝐥𝐢𝐜 𝐨𝐧 𝐂𝐚𝐧𝐯𝐚𝐬",
+      "year": "2025",
+      "id": "U-ZkA6N"
     },
     {
-      "id": "6a22",
-      "image": "/uploads/4.jpeg",
-      "artist": "ram",
-      "dimensions": "25*9",
-      "medium": "woodcut"
+      "image": "/uploads/10.jpg",
+      "artist": "Ranjit Das",
+      "dimensions": "6\"*6\"",
+      "medium": "𝐀𝐜𝐫𝐲𝐥𝐢𝐜 ",
+      "title": "𝐀𝐟𝐟𝐞𝐜𝐭𝐢𝐨𝐧",
+      "details": "𝐀𝐜𝐫𝐲𝐥𝐢𝐜 𝐨𝐧 𝐂𝐚𝐧𝐯𝐚𝐬",
+      "year": "2025",
+      "id": "KinOr6J"
     },
     {
-      "id": "5a74",
-      "image": "/uploads/5.jpeg",
-      "artist": "sdsa",
-      "dimensions": "fd",
-      "medium": "ggg"
+      "image": "/uploads/11.jpg",
+      "artist": "Ranjit Das",
+      "dimensions": "4\"*4\"",
+      "medium": "𝚆𝚊𝚝𝚎𝚛 𝚌𝚘𝚕𝚘𝚞𝚛",
+      "title": "𝚁𝚒𝚟𝚎𝚛",
+      "details": "𝚆𝚊𝚝𝚎𝚛 𝚌𝚘𝚕𝚘𝚞𝚛 𝚘𝚗 𝚙𝚊𝚙𝚎𝚛\n",
+      "year": "2025",
+      "id": "xEY3md5"
     },
     {
-      "id": "b975",
+      "image": "/uploads/12.jpg",
+      "artist": "Ranjit Das",
+      "dimensions": "6\"*6\"",
+      "medium": "𝙰𝚌𝚛𝚢𝚕𝚒𝚌 ",
+      "title": "𝙿𝚛𝚊𝚢 𝚏𝚘𝚛 𝙿𝚎𝚊𝚌𝚎",
+      "details": "𝙰𝚌𝚛𝚢𝚕𝚒𝚌 𝚘𝚗 𝙲𝚊𝚗𝚟𝚊𝚜",
+      "year": "2024",
+      "id": "U4V_F-r"
+    },
+    {
+      "image": "/uploads/16.jpg",
+      "artist": "Ritusree Dey",
+      "dimensions": "5\"*4\"",
+      "medium": "Acrylic",
+      "title": "Ramkingkar",
+      "details": "Ramkingkar......",
+      "year": "2022",
+      "id": "nM3wmEy"
+    },
+    {
+      "image": "/uploads/14.jpg",
+      "artist": "Ritusree Dey",
+      "dimensions": "4\"*5\"",
+      "medium": "Wood Cut",
+      "title": "Gossip",
+      "details": "Gossip in Table",
+      "year": "2019",
+      "id": "wqYsa4O"
+    },
+    {
+      "image": "/uploads/15.jpg",
+      "artist": "Ritusree Dey",
+      "dimensions": "3\"*4\"",
+      "medium": "Wood Cut",
+      "title": "Boys",
+      "details": "Gossip on Table",
+      "year": "2019",
+      "id": "OxsC6Z-"
+    },
+    {
       "image": "/uploads/2.jpeg",
-      "artist": "dfgfd",
-      "dimensions": "fdgfd",
-      "medium": "fdgdf"
+      "artist": "Ritusree Dey",
+      "dimensions": "5\"5\"",
+      "medium": "Wood Cut",
+      "title": "Face",
+      "details": "See",
+      "year": "2019",
+      "id": "ja_AOK0"
     },
     {
-      "id": "b978",
-      "image": "/uploads/6.jpeg",
-      "artist": "dfg",
-      "dimensions": "fdg",
-      "medium": "gfd"
+      "image": "/uploads/3.jpeg",
+      "artist": "Ritusree Dey",
+      "dimensions": "5\"*5\"",
+      "medium": "Wood Cut",
+      "title": "Thinking",
+      "details": "Thinking",
+      "year": "2020",
+      "id": "GiAlOOC"
     },
     {
-      "id": "50a9",
-      "image": "/uploads/5.jpeg",
-      "artist": "dfgd",
-      "dimensions": "fgdfg",
-      "medium": "dfg"
+      "image": "/uploads/1.jpeg",
+      "artist": "Ritusree Dey",
+      "dimensions": "6\"*6\"",
+      "medium": "Wood Cut",
+      "title": "Gossip",
+      "details": "Gossip on the Table",
+      "year": "2019",
+      "id": "tt5w_Av"
     }
   ]
 }
