@@ -13,3 +13,6 @@ email:pranab@gmail.com
 password:admin
 
 dist file copy to gh-pages
+
+npm run build
+then copy dist file and past it gh-pages folder after git checkout gh-pages
