@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate,HashRouter } from 'react-router-dom';
 import NavbarH from './components/NavbarH'
 import Footer from './components/Footer'
 import './App.css'
@@ -12,7 +12,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app-wrapper">
         {!isLoggedIn ? (
           <Routes>
@@ -40,7 +40,7 @@ function App() {
           </>
         )}
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
