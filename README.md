@@ -16,3 +16,8 @@ dist file copy to gh-pages
 
 npm run build
 then copy dist file and past it gh-pages folder after git checkout gh-pages
+
+final step 
+git add --all
+git commit -m " dist added"
+git push
