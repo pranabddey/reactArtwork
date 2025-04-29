@@ -13,6 +13,7 @@ function ImageUpload() {
   const [title, settitle] = useState('');
   const [details, setdetails] = useState('');
   const [year, setyear] = useState('');
+  const [price, setprice] = useState('');
 
   const handleImageChange =  (event) => {
     const file = event.target.files[0];
@@ -31,7 +32,7 @@ function ImageUpload() {
   const handleSubmit = async(e) => {
     e.preventDefault();
 
-    if (!imageFile || !artist || !dimensions || !medium || !title || !details || !year) {
+    if (!imageFile || !artist || !dimensions || !medium || !title || !details || !year || !price) {
       alert("Please fill out all fields and select an image.");
       return;
     }
@@ -44,7 +45,8 @@ function ImageUpload() {
       medium,
       title,
       details,
-      year
+      year,
+      price
     };
 
 
@@ -79,6 +81,7 @@ function ImageUpload() {
     settitle('');
     setdetails('');
     setyear('');
+    setprice('');
   };
 
   return (
@@ -162,6 +165,14 @@ function ImageUpload() {
           min="1900"
           max="2099"
         />
+
+        <Form.Control
+            type = "number"
+            placeholder="Price"
+            className="mb-3"
+            value={price}
+            onChange={(e) => setprice(e.target.value)}
+          />
 
           <Form.Control
             as="textarea"
