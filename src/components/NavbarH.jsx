@@ -11,13 +11,15 @@ export default function AccessibleTabs2() {
   const pathToIndex = {
     '/': 0,
     '/imageupload': 1,
-    '/login': 2
+    '/contactus': 2,
+    '/login': 3
   };
 
   const indexToPath = {
     0: '/',
     1: '/imageupload',
-    2: '/login'
+    2: '/contactus',
+    3: '/login'
   };
 
   const currentPath = location.pathname;
@@ -66,10 +68,10 @@ export default function AccessibleTabs2() {
           label="Image UPLOAD"
           sx={{ color: 'black', fontWeight: 600, minHeight: 'auto', height: '48px' }}
         />
-        {/* <Tab
-          label="Login"
+        <Tab
+          label="Contact US"
           sx={{ color: 'black', fontWeight: 600, minHeight: 'auto', height: '48px' }}
-        /> */}
+        />
       </Tabs>
     </Box>
   );

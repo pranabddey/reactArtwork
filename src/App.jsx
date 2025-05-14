@@ -7,6 +7,7 @@ import HomePage from './components/HomePage';
 import ImageUpload from './components/ImageUpload';
 import ProductDetails from './components/ProductDetails';
 import Login from './components/Login';
+import Contactus from './components/Contactus';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -31,6 +32,7 @@ function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/imageupload" element={<ImageUpload />} />
                 <Route path="/product/:id" element={<ProductDetails />} />
+                <Route path="/Contactus" element={<Contactus/>} />
                 <Route path="/login" element={<Navigate to="/" />} />
               </Routes>
             </main>
