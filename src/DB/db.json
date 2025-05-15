@@ -119,6 +119,17 @@
       "details": "Gossip on the Table",
       "year": "2019",
       "id": "tt5w_Av"
+    },
+    {
+      "id": "29e6",
+      "image": "/uploads/r1.jpeg",
+      "artist": "Ranjit Das",
+      "dimensions": "4*4",
+      "medium": "Acrylic",
+      "title": "Rabindranath Tagore",
+      "details": "Rabindranath Tagore",
+      "year": "2025",
+      "price": "50000"
     }
   ]
 }
