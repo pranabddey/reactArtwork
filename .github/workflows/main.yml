@@ -36,6 +36,7 @@ jobs:
           cp -r dist/* gh-pages-temp/
           
           # ✅ Copy DB folder too
+          rm -rf gh-pages-temp/DB  
           cp -r src/DB gh-pages-temp/DB
 
           # Commit and push changes
