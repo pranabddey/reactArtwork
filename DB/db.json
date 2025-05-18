@@ -130,6 +130,17 @@
       "details": "Rabindranath Tagore",
       "year": "2025",
       "price": "50000"
+    },
+    {
+      "image": "uploads/9.jpg",
+      "artist": "Ranjit Das",
+      "dimensions": "5*6",
+      "medium": "Acrylic",
+      "title": "She",
+      "details": "Acrylic art work",
+      "year": "2025",
+      "price": "55000",
+      "id": "NRWj92S"
     }
   ]
 }
