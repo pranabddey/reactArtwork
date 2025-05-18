@@ -24,6 +24,11 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Sanitize image paths in DB JSON files
+        run: |
+          # Use sed to remove leading slashes from image paths in db.json
+          find src/DB -name '*.json' -exec sed -i 's|\"image\":\s*\"/uploads/|\"image\": \"uploads/|g' {} +
+      
       - name: Deploy to gh-pages
         run: |
           git config --global user.name "GitHub Actions"
