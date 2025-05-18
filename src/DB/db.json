@@ -141,6 +141,39 @@
       "year": "2025",
       "price": "55000",
       "id": "NRWj92S"
+    },
+    {
+      "image": "/uploads/19.jpg",
+      "artist": "Ranjit Das",
+      "dimensions": "4*4",
+      "medium": "Water color",
+      "title": "sky",
+      "details": "sky",
+      "year": "2024",
+      "price": "45000",
+      "id": "jf6b0Ju"
+    },
+    {
+      "image": "/uploads/18.jpg",
+      "artist": "Ranjit Das",
+      "dimensions": "4*4",
+      "medium": "Water color",
+      "title": "sky",
+      "details": "sky",
+      "year": "2024",
+      "price": "45000",
+      "id": "LmwH_tB"
+    },
+    {
+      "image": "/uploads/20.jpg",
+      "artist": "Ranjit Das",
+      "dimensions": "4*4",
+      "medium": "Water color",
+      "title": "sky",
+      "details": "sky",
+      "year": "2024",
+      "price": "45000",
+      "id": "866alIm"
     }
   ]
 }
