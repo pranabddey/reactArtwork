@@ -21,3 +21,6 @@ final step
 git add --all
 git commit -m " dist added"
 git push
+
+# image upload url
+http://localhost:5173/reactArtwork/#/imageupload

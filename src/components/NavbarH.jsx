@@ -64,10 +64,10 @@ export default function AccessibleTabs2() {
           label="HOME"
           sx={{ color: 'black', fontWeight: 600, minHeight: 'auto', height: '48px' }}
         />
-        <Tab
+        {/* <Tab
           label="Image UPLOAD"
           sx={{ color: 'black', fontWeight: 600, minHeight: 'auto', height: '48px' }}
-        />
+        /> */}
         <Tab
           label="Contact US"
           sx={{ color: 'black', fontWeight: 600, minHeight: 'auto', height: '48px' }}
