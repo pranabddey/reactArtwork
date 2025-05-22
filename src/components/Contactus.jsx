@@ -50,7 +50,12 @@ function Contactus() {
       <div className="contact-section">
         <h2>Reach Us Directly</h2>
         <p><FaEnvelope className="icon" /> Email: <a href="mailto:pranabdey0506@gmail.com">pranabdey0506@gmail.com</a></p>
-        {/* <p><FaPhoneAlt className="icon" /> Call: <a href="tel:+7003748323">+91 7003748323</a></p> */}
+        <p>
+          <FaPhoneAlt className="icon" /> Call: 
+          <a href="https://wa.me/917003748323" target="_blank" rel="noopener noreferrer">
+            +91 7003748323
+          </a>
+        </p>
       </div>
     </div>
   );

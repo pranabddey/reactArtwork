@@ -10,16 +10,16 @@ export default function AccessibleTabs2() {
 
   const pathToIndex = {
     '/': 0,
-    '/imageupload': 1,
+    // '/imageupload': 1,
     '/contactus': 2,
     '/login': 3
   };
 
   const indexToPath = {
     0: '/',
-    1: '/imageupload',
-    2: '/contactus',
-    3: '/login'
+    // 1: '/imageupload',
+    1: '/contactus',
+    2: '/login'
   };
 
   const currentPath = location.pathname;
