@@ -142,8 +142,9 @@ function ImageUpload() {
             <option value="Water color">Water color</option>
             <option value="Wood Cut">Wood Cut</option>
             <option value="Acrylic">Acrylic</option>
-            <option value="Acrylic">Pencil Charcoal</option>
-            <option value="Acrylic">MixMedia</option>
+            <option value="Pencil Charcoal">Pencil Charcoal</option>
+            <option value="MixMedia">MixMedia</option>
+            <option value="Collograph">Collograph</option>
           </Form.Select>
 
       

@@ -40,7 +40,6 @@
       "year": "2025",
       "id": "KinOr6J"
     },
-    
     {
       "image": "uploads/12.jpg",
       "artist": "Ranjit Das",
@@ -165,6 +164,116 @@
       "year": "2024",
       "price": "45000",
       "id": "866alIm"
+    },
+    {
+      "image": "/uploads/kingfisher.png",
+      "artist": "Ritusree Dey",
+      "dimensions": "5*4",
+      "medium": "Water color",
+      "title": "Kingfisher",
+      "details": "Kingfisher Bird",
+      "year": "2024",
+      "price": "7000",
+      "id": "sc88qn6"
+    },
+    {
+      "image": "/uploads/bulbul.png",
+      "artist": "Ritusree Dey",
+      "dimensions": "N/A",
+      "medium": "Water color",
+      "title": "Bulbul",
+      "details": "Bulbul",
+      "year": "2024",
+      "price": "7000",
+      "id": "Q_Xqx-o"
+    },
+    {
+      "image": "/uploads/shalik.png",
+      "artist": "Ritusree Dey",
+      "dimensions": "N/A",
+      "medium": "Water color",
+      "title": "Salik Bird",
+      "details": "Salik",
+      "year": "2019",
+      "price": "9999",
+      "id": "UhMLZhN"
+    },
+    {
+      "image": "/uploads/leaf.png",
+      "artist": "Ritusree Dey",
+      "dimensions": "N/A",
+      "medium": "Collograph",
+      "title": "Leaf",
+      "details": "Leaf Collograph",
+      "year": "2023",
+      "price": "7000",
+      "id": "QFy_SMn"
+    },
+    {
+      "image": "/uploads/childrenonthefloor.png",
+      "artist": "Ritusree Dey",
+      "dimensions": "N/A",
+      "medium": "MixMedia",
+      "title": "UT",
+      "details": "N/A",
+      "year": "2019",
+      "price": "7000",
+      "id": "ZL9WJ9v"
+    },
+    {
+      "image": "/uploads/womenonthefloor.png",
+      "artist": "Ritusree Dey",
+      "dimensions": "N/A",
+      "medium": "Wood Cut",
+      "title": "UT",
+      "details": "UT",
+      "year": "2019",
+      "price": "9000",
+      "id": "t-2_YwZ"
+    },
+    {
+      "image": "/uploads/gossiponthetable.png",
+      "artist": "Ritusree Dey",
+      "dimensions": "N/A",
+      "medium": "Wood Cut",
+      "title": "Boys",
+      "details": "Boys",
+      "year": "2018",
+      "price": "11000",
+      "id": "cWgLuV9"
+    },
+    {
+      "image": "/uploads/didimoni.png",
+      "artist": "Ritusree Dey",
+      "dimensions": "4*4",
+      "medium": "Water color",
+      "title": "Old Lady",
+      "details": "Grand Mother",
+      "year": "2024",
+      "price": "9999",
+      "id": "nXRfI5G"
+    },
+    {
+      "image": "/uploads/Combindpicwithpranab.png",
+      "artist": "Ritusree Dey",
+      "dimensions": "5*5",
+      "medium": "Water color",
+      "title": "UT",
+      "details": "more",
+      "year": "2022",
+      "price": "10000",
+      "id": "k9InQgh"
+    },
+    {
+      "image": "/uploads/catandbridge.png",
+      "artist": "Ritusree Dey",
+      "dimensions": "5*5",
+      "medium": "Water color",
+      "title": "Cat",
+      "details": "Cat",
+      "year": "2022",
+      "price": "10000",
+      "id": "zuRyLua"
     }
   ]
 }

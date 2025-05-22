@@ -47,7 +47,7 @@ function HomePage() {
   return (
     <div className="container">
       <h2 className="htag">A Retrospective Exhibition of Ranjit Das</h2>
-      <p className="htag">An Exhibition initiated by kya Art Gallery</p>
+      <p className="htag">An Exhibition initiated by Galleri Kaya</p>
 
       {/* Filters */}
       <div className="row mb-4">
