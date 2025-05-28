@@ -108,7 +108,7 @@ function HomePage() {
                   <Card.Text>Title: {el.title}</Card.Text>
 
                   <Button onClick={() => handleClick(el.id)} variant="primary">
-                    See Details
+                    View Details
                   </Button>
                 </Card.Body>
               </Card>
