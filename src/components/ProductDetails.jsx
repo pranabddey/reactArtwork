@@ -54,7 +54,7 @@ function ProductDetails() {
           <p><strong>Medium:</strong> {artwork.medium}</p>
           <p><strong>Dimensions:</strong> {artwork.dimensions}</p>
           <p><strong>Year:</strong> {artwork.year}</p>
-          <p><strong>Price:</strong> {artwork.price}</p>
+          {/* <p><strong>Price:</strong> {artwork.price}</p> */}
           <p><strong>Details:</strong> {artwork.details}</p>
 
           <Button variant="secondary" onClick={() => navigate('/')}>
