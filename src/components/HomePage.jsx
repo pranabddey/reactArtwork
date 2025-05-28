@@ -14,6 +14,7 @@ function HomePage() {
   const cardRefs = useRef({});
   const navigate = useNavigate();
 
+  // Fetch data
   useEffect(() => {
     async function getData() {
       const fetchedData = await fetch('https://pranabddey.github.io/reactArtwork/DB/db.json');
@@ -24,6 +25,7 @@ function HomePage() {
     getData();
   }, []);
 
+  // Filter logic
   useEffect(() => {
     let filtered = data;
 
@@ -38,11 +40,11 @@ function HomePage() {
     setFilteredData(filtered);
   }, [artistFilter, mediumFilter, data]);
 
-  // Scroll into view logic
+  // Scroll into view if stored id exists
   useEffect(() => {
     const storedId = sessionStorage.getItem('selectedArtworkId');
     if (storedId && cardRefs.current[storedId]) {
-      cardRefs.current[storedId].scrollIntoView({ block: 'start' }); // no smooth behavior
+      cardRefs.current[storedId].scrollIntoView({ block: 'start' });
       sessionStorage.removeItem('selectedArtworkId');
     }
   }, [filteredData]);
@@ -51,7 +53,7 @@ function HomePage() {
   const uniqueMediums = [...new Set(data.map((item) => item.medium))];
 
   const handleClick = (id) => {
-    sessionStorage.setItem('selectedArtworkId', id); // store before navigating
+    sessionStorage.setItem('selectedArtworkId', id);
     navigate(`/product/${id}`);
   };
 
@@ -92,36 +94,48 @@ function HomePage() {
         </div>
       </div>
 
-      {/* Artwork Cards */}
-      <div className="row">
-        {filteredData.length > 0 ? (
-          filteredData.map((el) => (
-            <div
-              className="col-md-3 mb-4"
-              key={el.id}
-              ref={(ref) => (cardRefs.current[el.id] = ref)}
-            >
-              <Card style={{ height: '100%' }}>
-                <Card.Img variant="top" src={el.image} className="card-img-top" />
-                <Card.Body>
-                  <Card.Title>Artist: {el.artist}</Card.Title>
-                  <Card.Text>Title: {el.title}</Card.Text>
+      {/* Artwork Cards Grouped by Year */}
+      {Object.entries(
+        filteredData.reduce((acc, artwork) => {
+          const year = artwork.year || 'Unknown Year';
+          if (!acc[year]) acc[year] = [];
+          acc[year].push(artwork);
+          return acc;
+        }, {})
+      )
+        .sort((a, b) => b[0] - a[0]) // Sort years descending
+        .map(([year, artworks]) => (
+          <div key={year} className="mb-5">
+            <h4 className="mb-3">{year}</h4>
+            <div className="row">
+              {artworks.map((el) => (
+                <div
+                  className="col-md-3 mb-4"
+                  key={el.id}
+                  ref={(ref) => (cardRefs.current[el.id] = ref)}
+                >
+                  <Card style={{ height: '100%' }}>
+                    <Card.Img variant="top" src={el.image} className="card-img-top" />
+                    <Card.Body>
+                      <Card.Title>Artist: {el.artist}</Card.Title>
+                      <Card.Text>Title: {el.title}</Card.Text>
+                      <Card.Text>Medium: {el.medium}</Card.Text>
 
-                  <Button onClick={() => handleClick(el.id)} variant="primary">
-                    View Details
-                  </Button>
-                </Card.Body>
-              </Card>
+                      <Button onClick={() => handleClick(el.id)} variant="primary">
+                        View Details
+                      </Button>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
             </div>
-          ))
-        ) : (
-          <p className="text-center">No artworks match your filters.</p>
-        )}
-      </div>
+          </div>
+        ))}
     </div>
   );
 }
 
 export default HomePage;
+
 
 // json-server --watch ./src/DB/db.json --port 5000
