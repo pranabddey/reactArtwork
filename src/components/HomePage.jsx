@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './HomePage.css';
 import '../App.css';
 import Button from 'react-bootstrap/Button';
@@ -36,7 +36,16 @@ function HomePage() {
 
     setFilteredData(filtered);
   }, [artistFilter, mediumFilter, data]);
+  // Scroll into view logic
+  useEffect(() => {
+    const storedId = sessionStorage.getItem('selectedArtworkId');
+    if (storedId && cardRefs.current[storedId]) {
+      cardRefs.current[storedId].scrollIntoView({ behavior: "smooth", block: 'start' });
+      sessionStorage.removeItem('selectedArtworkId'); // optional: remove after scroll
+    }
+  }, [filteredData]);
 
+  // add above new scroll into view
   const uniqueArtists = [...new Set(data.map((item) => item.artist))];
   const uniqueMediums = [...new Set(data.map((item) => item.medium))];
 
