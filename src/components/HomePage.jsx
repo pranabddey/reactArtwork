@@ -11,6 +11,7 @@ function HomePage() {
   const [filteredData, setFilteredData] = useState([]);
   const [artistFilter, setArtistFilter] = useState('');
   const [mediumFilter, setMediumFilter] = useState('');
+  const cardRefs = useRef({});
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -36,20 +37,21 @@ function HomePage() {
 
     setFilteredData(filtered);
   }, [artistFilter, mediumFilter, data]);
+
   // Scroll into view logic
   useEffect(() => {
     const storedId = sessionStorage.getItem('selectedArtworkId');
     if (storedId && cardRefs.current[storedId]) {
-      cardRefs.current[storedId].scrollIntoView({ behavior: "smooth", block: 'start' });
-      sessionStorage.removeItem('selectedArtworkId'); // optional: remove after scroll
+      cardRefs.current[storedId].scrollIntoView({ block: 'start' }); // no smooth behavior
+      sessionStorage.removeItem('selectedArtworkId');
     }
   }, [filteredData]);
 
-  // add above new scroll into view
   const uniqueArtists = [...new Set(data.map((item) => item.artist))];
   const uniqueMediums = [...new Set(data.map((item) => item.medium))];
 
   const handleClick = (id) => {
+    sessionStorage.setItem('selectedArtworkId', id); // store before navigating
     navigate(`/product/${id}`);
   };
 
@@ -94,7 +96,11 @@ function HomePage() {
       <div className="row">
         {filteredData.length > 0 ? (
           filteredData.map((el) => (
-            <div className="col-md-3 mb-4" key={el.id}>
+            <div
+              className="col-md-3 mb-4"
+              key={el.id}
+              ref={(ref) => (cardRefs.current[el.id] = ref)}
+            >
               <Card style={{ height: '100%' }}>
                 <Card.Img variant="top" src={el.image} className="card-img-top" />
                 <Card.Body>
@@ -117,4 +123,5 @@ function HomePage() {
 }
 
 export default HomePage;
+
 // json-server --watch ./src/DB/db.json --port 5000
